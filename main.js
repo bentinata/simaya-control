@@ -129,8 +129,10 @@ router.route('/servers/:server_name/stats')
 		// statistics.ip = req.body.ip;
 		stat.name = req.params.server_name;
 		stat.cpu = req.body.cpu;
-		stat.ram = req.body.ram;
-		stat.disk = req.body.disk;
+		stat.ramcur = req.body.ramcur;
+		stat.rammax = req.body.rammax;
+		stat.diskcur = req.body.diskcur;
+		stat.diskmax = req.body.diskmax;
 
 		stat.save(function(err){
 			if (err)
