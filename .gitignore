@@ -2,3 +2,4 @@ node_modules
 dump.txt
 .DS_Store
 key/*
+backup_key

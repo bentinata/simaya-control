@@ -3,11 +3,12 @@ var Schema		= mongoose.Schema;
 
 var statSchema	= new Schema({
 	name: String,
-	cpu: int,
-	ramcur: int,
-	rammax: int,
-	diskcur: int,
-	diskmax: int
+	timestamp: Date,
+	cpu: Number,
+	ramcur: Number,
+	rammax: Number,
+	diskcur: Number,
+	diskmax: Number
 },{
 	collection: 'stats'
 });
