@@ -133,7 +133,7 @@ router.route('/servers/:server_name/enable')
 		});
 	});
 
-router.route('/servers/:server_name/stats')
+router.route('/stats/:server_name')
 	.get(function(req, res){
 		Stat.findOne({name: req.params.server_name}, function(err, stat){
 			if (err)
